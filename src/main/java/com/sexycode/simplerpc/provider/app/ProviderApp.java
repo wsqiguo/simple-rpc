@@ -30,6 +30,7 @@ public class ProviderApp {
         ServerSocket listener = new ServerSocket(9090);
         try {
             while (true) {
+                log.info("监控端口：9090");
                 Socket socket = listener.accept();
                 try {
                     // 将请求反序列化
